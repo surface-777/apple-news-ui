@@ -1,98 +1,35 @@
 {
   "expo": {
-    "name": "News By Saul",
-    "slug": "news-by-saul",
+    "name": "Apple News",
+    "slug": "apple-news-ui",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
-    "userInterfaceStyle": "automatic",
-    "extra": {
-      "eas": {
-        "projectId": "05affb3c-0ace-4c40-bfc3-841eb875d19c",
-        "build": {
-          "experimental": {
-            "ios": {
-              "appExtensions": [
-                {
-                  "bundleIdentifier": "com.sportapp.anews-ui.widget",
-                  "targetName": "widget",
-                  "entitlements": {
-                    "com.apple.security.application-groups": [
-                      "group.com.sportapp.anews-ui"
-                    ]
-                  }
-                },
-                {
-                  "bundleIdentifier": "com.sportapp.anews-ui.watchkitapp",
-                  "targetName": "watch",
-                  "entitlements": {
-                    "com.apple.security.application-groups": [
-                      "group.com.sportapp.anews-ui"
-                    ]
-                  }
-                }
-              ]
-            }
-          }
-        }
-      }
-    },
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/splash.png",
-      "1sizeMode": "contain",
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "appleTeamId": "F7P5RH5CTP",
-      "supportsTablet": true,
-      "bundleIdentifier": "com.sportapp.anews-ui",
-      "deploymentTarget": "15.1",
-      "infoPlist": {
-        "NSSupportsLiveActivities": true
-      },
-      "entitlements": {
-        "com.apple.security.application-groups": [
-             "group.com.sportapp.anews-ui",
-              "group.com.sportapp.anews-ui"
-        ]
-      }
+      "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.sportapp.anewsui"
-    },
-    "web": {
-      "bundler": "metro",
-      "favicon": "./assets/images/favicon.png"
+      "package": "com.saul.applenewsui"
     },
     "plugins": [
-      "expo-router",
-      "expo-font",
-      [
-        "expo-build-properties",
-        {
-          "ios": {
-            "useFrameworks": "static",
-            "deploymentTarget": "15.1"
-          }
-        }
-      ],
-      "@bacons/apple-targets"
+      "expo-router"
     ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactServerFunctions": false,
-      "reactCompiler": true
-    },
-    "newArchEnabled": true,
-    "owner": "qlur",
-    "runtimeVersion": "1.0.0",
-    "updates": {
-      "url": "https://u.expo.dev/52ab6a77-bd0c-4c40-9952-d272a4e0781a"
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+           "projectId": "2150b370-334e-4a54-b760-d1a794944d35"
+"
+      }
     }
   }
 }
+
+
