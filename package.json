@@ -105,7 +105,6 @@
     "typescript": "~5.3.3"
   },
   "resolutions": {
-    "react-native-reanimated": "4.0.0-nightly-20250121-4c66cb237",
     "@expo/server": "0.5.0"
   },
   "private": true
